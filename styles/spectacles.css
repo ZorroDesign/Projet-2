@@ -1,0 +1,115 @@
+/**** PAGE PRINCIPALE ****/
+body {
+	background-color:#F5FCFC;
+	height:100%;
+	margin:auto;
+	overflow-x: hidden;
+}
+
+a {
+	color: #F96816;
+}
+
+/**** SLIDER ****/
+#logo {
+	position: absolute;
+	top:0;
+}
+
+#slider {
+  height: 250px;
+  width: 100%;
+}
+
+ul {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  height: 250px;
+  overflow: hidden;
+}
+
+#skeleton {
+  width: 100%;
+  visibility: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-animation: sliderrr 20s infinite;
+  animation: sliderrr 20s infinite;
+}
+
+.num0 {left: 0%;}
+.num1 {left: 100%;}
+.num2 {left: 200%;}
+.num3 {left: 300%;}
+.num4 {left: 400%;}
+
+@-webkit-keyframes sliderrr {
+  0%, 20%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
+  21%, 40%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  41%, 60%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
+  61%, 80%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
+  81%, 100%  { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
+}
+
+@keyframes sliderrr {
+  0%, 20%  { -webkit-transform: translateX(0%); transform: translateX(0%); }
+  21%, 40%  { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+  41%, 60%  { -webkit-transform: translateX(-200%); transform: translateX(-200%); }
+  61%, 80%  { -webkit-transform: translateX(-300%); transform: translateX(-300%); }
+  81%, 100% { -webkit-transform: translateX(-400%); transform: translateX(-400%); }
+}
+
+/**** RESULTATS ****/
+.tableau {
+	padding: 20px;
+	font-family:arial;
+	margin:auto;
+	font-size: 9pt;
+	width:75%;
+	text-align: center;
+}
+
+.tableau thead tr th, table.tableau tfoot tr th {
+	background-color: #C7EAE6;
+	font-size: 9pt;
+	padding: 6px;
+}
+
+#date,
+#time {
+	width:12%;
+}
+
+#price {
+	width:20%;
+}
+
+.tableau tbody td {
+	color: #3D3D3D;
+	padding: 18px;
+	vertical-align: top;
+}
+
+.tableau tbody tr:nth-child(even) {
+	background: #E5F6F4;
+}
+
+/**** FOOTER ****/
+#footer {
+	position: relative;
+	bottom:0;
+	margin-top:60px;
+	width:100%;
+	background-color: #249F92;
+	height:3vw;
+	color:white;
+	padding-top:1.5%;
+	padding-bottom:0.5%;
+	text-align:center;
+	}
